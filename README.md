@@ -104,9 +104,3 @@ $ kubectl get secret -n logging elasticsearch-es-elastic-user -o=jsonpath='{.dat
 
 The same procedure can be used to access Prometheus or Alertmanager.
 
-## Relationship With Other Projects
-
-The monitoring stack that is set up by this project is currently also used by an [affiliated project](https://github.com/schul-cloud/bbb-deployment)
-for [Big Blue Button](https://bigbluebutton.org/). Therefore, some of the files here contain configurations to monitor
-that setup. To exclude them delete all files starting with `bbb-` and remove the file names from the respective
-`kustomization.yaml` files.
